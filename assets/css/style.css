@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    width: 100%;
+    height: fit-content;
+}
+/* ============Navbar Start========= */
+header{
+    display: grid;
+    grid-template-columns: 10% 75% 15%;
+    border: 1px solid #00000020;
+    padding: 0px 2em;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+header .logo{
+    padding: 1.4em 0px;
+    font-size: 1.1em;
+    border-right: 1px solid #00000020;
+}
+header .middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header .middle .address i{display: none;}
+header .input{
+    width: 60%;
+    background-color: #00000010;
+    border-radius: 10px;
+    padding: 0.8em;
+    border: 1px solid #00000020;
+}
+header .input input{
+    width: 80%;
+    height: 100%;
+    font-size: 15px;
+    border: none;
+    background: transparent;
+}
+header .input input:focus{outline: none;}
+header .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .right a{text-decoration: none; font-size: 20px;}
+header .right .cart{
+    background-color: aqua;
+    padding: 0.7em;
+    border-radius: 5px;
+    font-size: 17px;
+    color: white;
+}
+/* ============Navbar End========= */
+
+/* ============Image_1st Start========= */
+.body{
+    padding: 7em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.image_1st img{width: 100%;}
+/* ============Image_1st End========= */
+
+/* ============Image_2nd Start========= */
+.image2nd{
+    height: 25vh;
+    display: flex;
+    gap: 1em;
+}
+.image2nd img{
+    width:  22em;
+    height: 100%;
+}
+/* ============Image_2nd End========= */
+
+/* ============Items Start========= */
+.items{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.items .box{
+    width: 8vmax;
+    height: 12vmax;
+    background-color: aquamarine;
+}
+.box img{width: 100%;height: 100%;}
+#heading{
+    display: flex;
+    justify-content: space-between;
+    font-size: 27px;
+    margin-top: 0.5em;
+}
+#heading p{font-size: 20px;color: rgb(7, 125, 125);font-weight: 0;}
+.box_part1{
+    display: flex;
+    overflow: scroll;
+    gap: 1em;
+    scrollbar-width: none;
+}
+.box_part1 .box{
+    flex-shrink: 0;
+    width: 12vmax;
+    height: 19vmax;
+    border: 1px solid #00000020;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px #00000020;
+    padding: 1em;
+}
+.box_part1 .box .image{
+    height: 50%;
+    padding: 0 1em;
+}
+.box_part1 .box .description{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box_part1 .box .description h4{
+    font-size: 14px;
+    font-weight: 550;
+}
+.box_part1 .box .description p{
+    font-size: 13px;
+    color: gray;
+}
+.box_part1 .box .description #minute{font-size: 7px;display: inline;padding:0.5em;background-color: #00000010;border-radius: 5px;font-weight: 600;}
+.box_part1 .box .description label{display: flex;justify-content: space-between;align-items: center;}
+.box_part1 .box .description button{
+    background-color: #f7fff9;
+    border: none;
+    border: 1px solid #31e95f;
+    padding: 0.5em 1.5em;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* ==========Footer Start====== */
+footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 5em;
+    height: fit-content;
+    padding: 0px 7em;
+}
+footer .box{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    /* background-color: red; */
+}
+footer .box .under_box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+footer .box .under_box .boxx{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 16px
+}
+footer .box .under_box .boxx a{text-decoration: none;color: gray;}
+.buttombox{
+    margin: 0px 7em;
+    height: 10vh;
+    background-color: #00000010;
+    display: flex;
+    border-radius: 20px;
+    margin-top: 4em;
+}
+.buttombox .box img{
+    width: 80px;
+    height: 30px;
+}
+.buttombox .box{
+    height: 100%;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: gray;
+}
+.buttombox .box i{
+    padding: 0.5em;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    font-size: 22px;
+}
+.last_p{
+    padding: 1em 7em;
+    color: gray;
+    text-align: justify;
+}

@@ -1,0 +1,135 @@
+@media (max-width: 724px) {
+    header{
+        grid-template-columns: 1fr;
+        padding: 0.8em;
+    }
+    header .logo{display: none;}
+    header .right{display: none;}
+    header .middle{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+    }
+    header .middle .address{width: 100%;display: flex;align-items: center;justify-content: space-between;}
+    header .middle .address i{font-size: 20px;display: contents;}
+    header .middle .input{width: 100%;}
+    
+    /* ============Image_1st Start========= */
+    .body{
+        padding: 8.5em 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding-bottom: 1em;
+    }
+    .image_1st img{width: 100%;height: 15vh;}
+    /* ============Image_1st End========= */
+
+    /* ============Image_2nd Start========= */
+    .image2nd{
+        height: 10vh;
+        display: flex;
+        gap: 0.5em;
+    }
+    .image2nd img{
+        width:  6em;
+        height: 100%;
+    }
+    
+    /* ============Image_2nd End========= */
+
+    #heading{font-size: 20px;}
+    #heading p{font-size: 10px;}
+    .box_part1 .box{
+        width: 20vmax;
+        height: 35vmax;
+    }
+    .box_part1 .box .description h4{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    /* ======Footer====== */
+    footer{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: fit-content;
+        padding: 1em;
+        gap: 2em;
+        
+    }
+    footer .topbox{
+        width: 100%;
+        grid-column: 1/4;
+        height: fit-content;
+    }
+    footer .box{
+        width: 100%;
+        height: fit-content;
+        font-size: 15px;
+        /* position: absolute; */
+    }
+    footer .box .under_box .boxx{gap: 0.5em;}
+    footer .under_box .boxx a{
+        font-size: 12px;
+    }
+    .buttombox{
+        margin: 0px 0.5em;
+        padding: 0;
+        margin-top: 0em;
+        height: 5vh;
+    }
+    .buttombox .box{
+        font-size: 5px;
+    }
+    .buttombox .box img{
+        width: 30px;
+        height: 15px;
+    }
+    .buttombox .box i{
+        font-size: 10px;
+    }
+    .last_p{
+        margin: 3em 0;
+        padding: 0 2em;
+        font-size: 7px;
+    }
+}
+
+
+@media(min-width: 725px) and (max-width: 1024px){
+    header{
+        padding: 0.8em 1.5em;
+        grid-template-columns: 15% 60% 25%;
+    }
+    .body{
+        padding: 9em 1em;
+        padding-bottom: 2em;
+    }
+
+    /* ============Image_2nd Start========= */
+    .image2nd{
+        height: 10vh;
+        display: flex;
+        gap: 0.5em;
+    }
+    .image2nd img{
+        width:  17em;
+        height: 100%;
+    }
+    footer{
+        padding: 1em;
+        margin: 0;
+        height: 25vh;
+    }
+    .buttombox{
+        margin: 0px 1em;
+        padding: 0;
+        margin-top: 0em;
+        height: 5vh;
+    }
+    .last_p{
+        margin: 3em 0;
+        padding: 0 2em;
+        font-size: 15px;
+    }
+}
