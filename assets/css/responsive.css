@@ -1,20 +1,21 @@
 @media (max-width: 724px) {
     header{
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 1fr 2fr;
         padding: 0;
     }
-    header .logo{font-size: 17px;display: flex;align-items: center;justify-content: center;}
+    header .logo{font-size: 18px;display: flex;align-items: center;justify-content: center;}
     header .right{display: none;}
     header .middle{
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5em;
-        padding: 0.5em;
+        padding: 0.8em;
         justify-content: space-evenly;
     }
     header .middle .address{width: 100%;display: flex;align-items: center;justify-content: space-between;}
-    header .middle .address i{font-size: 20px;display: contents;}
-    header .middle .input{width: 100%;}
+    header .middle .address i{font-size: 25px;display: contents;}
+    header .middle .address p{font-size: 12px;}
+    header .middle .input{width: 100%;border-radius: 5px;background-color: #00808010;}
     
     /* ============Image_1st Start========= */
     .body{
@@ -134,4 +135,5 @@
         padding: 0 2em;
         font-size: 15px;
     }
+    
 }
