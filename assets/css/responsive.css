@@ -1,14 +1,16 @@
 @media (max-width: 724px) {
     header{
-        grid-template-columns: 1fr;
-        padding: 0.8em;
+        grid-template-columns: 1fr 3fr;
+        padding: 0;
     }
-    header .logo{display: none;}
+    header .logo{font-size: 17px;display: flex;align-items: center;justify-content: center;}
     header .right{display: none;}
     header .middle{
         flex-direction: column;
         align-items: flex-start;
-        gap: 1em;
+        gap: 0.5em;
+        padding: 0.5em;
+        justify-content: space-evenly;
     }
     header .middle .address{width: 100%;display: flex;align-items: center;justify-content: space-between;}
     header .middle .address i{font-size: 20px;display: contents;}
